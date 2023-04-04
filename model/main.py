@@ -1,8 +1,4 @@
-import matplotlib as mp
-import sklearn as sk
-import pandas as pd
-import numpy as np
-from matplotlib import pyplot
+import matplotlib.pyplot as plt
 from pandas import read_csv
 from pandas.plotting import scatter_matrix
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
@@ -19,9 +15,7 @@ def main():
     # print(dataset.head(20))
     array = dataset.values
     X = array[:, 0:3]
-    print(X)
     y = array[:, 3]
-    print(y)
     X_train, X_validation, Y_train, Y_validation = train_test_split(X, y, test_size=0.20, random_state=1)
 
     ...
