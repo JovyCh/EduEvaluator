@@ -1,0 +1,19 @@
+.sumbit{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.sumbit>label{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.tbody{
+    height: 100px;
+}
+.predic{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 450px;
+}

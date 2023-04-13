@@ -1,0 +1,46 @@
+.table{
+    width: 80%;
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin: 0 auto;
+    
+}
+.table>tbody>tr{
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.container{
+    margin-top: 10px;
+}
+
+.mb-3{
+    color: white;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.mb-2{
+
+    color: white;
+    width: 80%;
+    margin: auto;  
+    margin-bottom: 10px;
+}
+
+.add{
+    width: 80%;
+    margin: auto;  
+
+}
+.App{
+
+    background-image: url("../assets/background1change.jpg");
+    height: 100vh;
+}
+
+tr{
+    color: white;
+}

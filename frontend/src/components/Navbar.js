@@ -31,7 +31,7 @@ function Navbar(){
                 <Link to="/grades">Grades </Link>
                 <Link to="/predict">Prediction </Link>
                 <Link to="/exam">Exam </Link>
-                <span onClick={() => signOut(auth)}>Sign Out</span>
+                <span className='signout' onClick={() => signOut(auth)}>Sign Out</span>
                 <button onClick={toggleNavbar}>
                     <ReorderIcon/>
                 </button>

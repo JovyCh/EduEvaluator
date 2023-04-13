@@ -5,7 +5,8 @@
   border: 1px solid #dcdcdc;
   padding: 20px;
   text-align: center;
-
+  color: white;
+  margin-top: 25vh;
 }
 
 .auth form{

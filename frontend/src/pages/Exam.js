@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "../styles/exam.css";
+import "../styles/Exam.css";
 function Exam(props) {
     const questions = [
         {

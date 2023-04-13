@@ -67,7 +67,6 @@ const AddStudent= ({id, setStudentId}) => {
     };
 
     useEffect(() => {
-        console.log("The id here is : ", id);
         if (id !== undefined && id !== "") {
             editHandler();
         }
@@ -88,7 +87,7 @@ return (
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formStudentNumber">
                     <InputGroup>
-                        <InputGroup.Text id="formStudentNumber">B</InputGroup.Text>
+                        <InputGroup.Text id="formStudentNumber">Student Number: </InputGroup.Text>
                         <Form.Control
                             type="text"
                             placeholder="Student Number"
@@ -100,7 +99,7 @@ return (
 
                 <Form.Group className="mb-3" controlId="formStudentName">
                     <InputGroup>
-                        <InputGroup.Text id="formStudentName">A</InputGroup.Text>
+                        <InputGroup.Text id="formStudentName">Student Name: </InputGroup.Text>
                         <Form.Control
                             type="text"
                             placeholder="Student Name"
@@ -112,7 +111,7 @@ return (
 
                 <Form.Group className="mb-3" controlId="formStudentEmail">
                     <InputGroup>
-                        <InputGroup.Text id="formStudentEmail">A</InputGroup.Text>
+                        <InputGroup.Text id="formStudentEmail">Student Email: </InputGroup.Text>
                         <Form.Control
                             type="text"
                             placeholder="Student Email"
@@ -123,7 +122,7 @@ return (
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formStudentAttendance">
                     <InputGroup>
-                        <InputGroup.Text id="formStudentAttendance">A</InputGroup.Text>
+                        <InputGroup.Text id="formStudentAttendance">Student Attendance: </InputGroup.Text>
                         <Form.Control
                             type="text"
                             placeholder="Student Attendance"
@@ -134,7 +133,7 @@ return (
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formStudentMobile">
                     <InputGroup>
-                        <InputGroup.Text id="formStudentMobile">A</InputGroup.Text>
+                        <InputGroup.Text id="formStudentMobile">Student Mobile: </InputGroup.Text>
                         <Form.Control
                             type="text"
                             placeholder="Student Mobile"
@@ -145,7 +144,7 @@ return (
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formStudentGrade1">
                     <InputGroup>
-                        <InputGroup.Text id="formStudentGrade1">A</InputGroup.Text>
+                        <InputGroup.Text id="formStudentGrade1">Grade 1: </InputGroup.Text>
                         <Form.Control
                             type="text"
                             placeholder="Grade 1"
@@ -156,7 +155,7 @@ return (
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formStudentGrade2">
                     <InputGroup>
-                        <InputGroup.Text id="formStudentGrade2">A</InputGroup.Text>
+                        <InputGroup.Text id="formStudentGrade2">Grade 2: </InputGroup.Text>
                         <Form.Control
                             type="text"
                             placeholder="Grade 2"
@@ -165,7 +164,7 @@ return (
                         />
                     </InputGroup>
                 </Form.Group>
-                <div className="d-grid gap-2">
+                <div className="add">
                     <Button variant="primary" type="Submit">
                         Add/ Update
                     </Button>

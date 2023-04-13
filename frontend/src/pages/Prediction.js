@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+import { Container, Row, Col } from "react-bootstrap";
+import StudentList from "../components/gradeAndAttendance";
+import '../styles/Predict.css'
 function Prediction() {
   const [input1, setInput1] = useState('');
   const [input2, setInput2] = useState('');
   const [input3, setInput3] = useState('');
   const [result, setResult] = useState('');
+  const [studentId, setStudentId] = useState("");
+
+  const getStudentIdHandler = (id) => {
+      setStudentId(id);
+  };
 
   const handleInput1Change = event => {
     setInput1(event.target.value);
@@ -36,26 +44,38 @@ function Prediction() {
 
   return (
     <div className="App">
-      <form onSubmit={handleSubmit}>
+            <Container>
+                <Row>
+                    <Col>
+                        <StudentList getStudentId={getStudentIdHandler} />
+                    </Col>
+                </Row>
+            </Container>
+      <form onSubmit={handleSubmit} className='sumbit'>
         <label>
-          Input 1:
-          <input type="text" value={input1} onChange={handleInput1Change} />
+          Grade 1:
+          <input min='0' max='100'name ='grade1'type="number" value={input1} onChange={handleInput1Change} />
         </label>
+        <br></br>
         <label>
-          Input 2:
-          <input type="text" value={input2} onChange={handleInput2Change} />
+        Grade 2:
+          <input min='0' max='100'type="number" value={input2} onChange={handleInput2Change} />
         </label>
+        <br></br>
         <label>
-          Input 3:
-          <input type="text" value={input3} onChange={handleInput3Change} />
+          Attendance between 1 and 5:
+          <input min='1' max='5'type="number" value={input3} onChange={handleInput3Change} />
         </label>
+        <br></br>
         <button type="submit">Calculate</button>
       </form>
       {result && (
-        <p>The predicted grade is: {result}</p>
+        <p className='predic'>The predicted grade is: {result}</p>
       )}
     </div>
+
   );
+  
 }
 
 export default Prediction;

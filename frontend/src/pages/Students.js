@@ -2,24 +2,24 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import AddStudent from "../components/AddStudent";
 import StudentList from "../components/StudentList";
+import '../styles/Student.css'
 
 function Students() {
     const [studentId, setStudentId] = useState("");
 
     const getStudentIdHandler = (id) => {
-        console.log("The ID of document to be edited: ", id);
         setStudentId(id);
     };
     return (
         <>
-        <Container style={{ width: "400px" }}>
+        <Container name='addstudent'>
             <Row>
                 <Col>
                     <AddStudent id={studentId} setStudentId={setStudentId} />
                 </Col>
             </Row>
         </Container>
-            <Container>
+            <Container name='studentlist'>
                 <Row>
                     <Col>
                         <StudentList getStudentId={getStudentIdHandler} />
