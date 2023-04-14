@@ -16,6 +16,7 @@ import Register from './pages/Register'
 import VerifyEmail from './pages/VerifyEmail';
 import {AuthProvider} from "./pages/AuthContext";
 import Login from "./pages/Login";
+import Help from "./pages/Help";
 import {collection, getDocs} from 'firebase/firestore'
 
 function App() {
@@ -71,6 +72,13 @@ function App() {
                         <PrivateRoute>
                             <Navbar/>
                             <Exam/>
+                            <Footer/>
+                        </PrivateRoute>
+                    }/>
+                    <Route exact path='/help' element={
+                        <PrivateRoute>
+                            <Navbar/>
+                            <Help/>
                             <Footer/>
                         </PrivateRoute>
                     }/>

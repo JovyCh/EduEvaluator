@@ -22,6 +22,7 @@ function Navbar(){
                     <Link to="/grades">Grades </Link>
                     <Link to="/predict">Prediction </Link>
                     <Link to="/exam">Exam </Link>
+                    <Link to="/help">Help </Link>
                 </div>
             </div>
 
@@ -31,6 +32,7 @@ function Navbar(){
                 <Link to="/grades">Grades </Link>
                 <Link to="/predict">Prediction </Link>
                 <Link to="/exam">Exam </Link>
+                <Link to="/help">Help </Link>
                 <span className='signout' onClick={() => signOut(auth)}>Sign Out</span>
                 <button onClick={toggleNavbar}>
                     <ReorderIcon/>
