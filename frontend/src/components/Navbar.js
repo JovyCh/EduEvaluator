@@ -22,7 +22,6 @@ function Navbar(){
                     <Link to="/grades">Grades </Link>
                     <Link to="/predict">Prediction </Link>
                     <Link to="/exam">Exam </Link>
-                    <Link to="/help">Help </Link>
                 </div>
             </div>
 

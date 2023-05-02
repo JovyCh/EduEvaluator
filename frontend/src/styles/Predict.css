@@ -5,7 +5,7 @@
 
 .sumbit>label{
     display: flex;
-    color: white;
+    color: black;
 }
 .tbody{
     height: 100px;
@@ -14,5 +14,6 @@
     width: 80%;
     margin: auto;
     margin-bottom: 450px;
-    color: white;
+    color: black;
+    text-align: center;
 }

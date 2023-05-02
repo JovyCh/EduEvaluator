@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Table, Button } from "react-bootstrap";
 import StudentDataService from "../services/student.services";
 
+
 const StudentList = ({ getStudentId }) => {
     const [students, setStudents] = useState([]);
     useEffect(() => {
@@ -63,6 +64,7 @@ const StudentList = ({ getStudentId }) => {
                                 </Button>
                             </td>
                         </tr>
+                        
                     );
                 })}
                 </tbody>

@@ -1,13 +1,9 @@
-.score-section {
-    display: flex;
-    font-size: 24px;
-    align-items: center;
-}
+
 
 .question-section {
     width: 80%;
     position: relative;
-    color: white;
+    color: black;
     margin: auto;
 }
 
@@ -49,9 +45,9 @@
 }
 
 .score-section {
-    display: flex;
     font-size: 24px;
-    align-items: center;
+    text-align: center;
+    line-height: 500px;
 }
 .exam.body{
     background-color: #7cc6fe;
@@ -59,4 +55,8 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+
+.score-section{
+    color: black;
 }

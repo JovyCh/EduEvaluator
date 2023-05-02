@@ -1,20 +1,13 @@
 import joblib
 import numpy as np
 import pandas as pd
-from keras import Sequential, regularizers
-from keras.layers import Dense,  Activation
 
-import tensorflow as tf
-from sklearn.datasets import make_blobs
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler
 from sklearn.svm import SVC
 from joblib import dump
-from tensorflow.python.keras.wrappers.scikit_learn import KerasClassifier
 import pickle
-from skl2onnx import convert_sklearn
-from skl2onnx.common.data_types import FloatTensorType
+
 
 
 def model():

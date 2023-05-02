@@ -56,3 +56,10 @@
     cursor: pointer;
     transition: 0.3s ease-in;
 }
+
+canvas{
+    height: 500px;
+}
+#meanGrade{
+    text-align: center;
+}

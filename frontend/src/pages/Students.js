@@ -11,7 +11,7 @@ function Students() {
         setStudentId(id);
     };
     return (
-        <>
+        <div>       
         <Container name='addstudent'>
             <Row>
                 <Col>
@@ -26,7 +26,7 @@ function Students() {
                     </Col>
                 </Row>
             </Container>
-        </>
+        </div>
     );
 }
 
